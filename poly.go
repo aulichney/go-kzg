@@ -1,6 +1,6 @@
 package kzg
 
-import "github.com/protolambda/go-kzg/bls"
+import "github.com/aulichney/go-kzg/bls"
 
 // invert the divisor, then multiply
 func polyFactorDiv(dst *bls.Fr, a *bls.Fr, b *bls.Fr) {
