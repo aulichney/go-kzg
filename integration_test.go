@@ -5,7 +5,7 @@ package kzg
 
 import (
 	"bytes"
-	"github.com/protolambda/go-kzg/bls"
+	"github.com/aulichney/go-kzg/bls"
 	"math/rand"
 	"testing"
 )

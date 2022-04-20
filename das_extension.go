@@ -1,6 +1,6 @@
 package kzg
 
-import "github.com/protolambda/go-kzg/bls"
+import "github.com/aulichney/go-kzg/bls"
 
 // warning: the values in `a` are modified in-place to become the outputs.
 // Make a deep copy first if you need to use them later.

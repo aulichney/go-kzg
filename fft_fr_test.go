@@ -3,7 +3,7 @@ package kzg
 import (
 	"testing"
 
-	"github.com/protolambda/go-kzg/bls"
+	"github.com/aulichney/go-kzg/bls"
 )
 
 func TestFFTRoundtrip(t *testing.T) {

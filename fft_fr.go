@@ -2,7 +2,7 @@ package kzg
 
 import (
 	"fmt"
-	"github.com/protolambda/go-kzg/bls"
+	"github.com/aulichney/go-kzg/bls"
 )
 
 func (fs *FFTSettings) simpleFT(vals []bls.Fr, valsOffset uint64, valsStride uint64, rootsOfUnity []bls.Fr, rootsOfUnityStride uint64, out []bls.Fr) {

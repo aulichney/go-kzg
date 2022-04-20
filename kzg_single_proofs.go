@@ -5,7 +5,7 @@
 
 package kzg
 
-import "github.com/protolambda/go-kzg/bls"
+import "github.com/aulichney/go-kzg/bls"
 
 // KZG commitment to polynomial in evaluation form, i.e. eval = FFT(coeffs).
 // The eval length must match the prepared KZG settings width.

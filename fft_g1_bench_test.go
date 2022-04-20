@@ -5,7 +5,7 @@ package kzg
 
 import (
 	"fmt"
-	"github.com/protolambda/go-kzg/bls"
+	"github.com/aulichney/go-kzg/bls"
 	"testing"
 )
 

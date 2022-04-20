@@ -5,7 +5,7 @@
 
 package kzg
 
-import "github.com/protolambda/go-kzg/bls"
+import "github.com/aulichney/go-kzg/bls"
 
 // Compute KZG proof for polynomial in coefficient form at positions x * w^y where w is
 // an n-th root of unity (this is the proof for one data availability sample, which consists
