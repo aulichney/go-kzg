@@ -3,7 +3,7 @@
 
 package kzg
 
-import "github.com/protolambda/go-kzg/bls"
+import "github.com/aulichney/go-kzg/bls"
 
 // GenerateTestingSetup creates a setup of n values from the given secret. **for testing purposes only**
 func GenerateTestingSetup(secret string, n uint64) ([]bls.G1Point, []bls.G2Point) {

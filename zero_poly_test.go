@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/protolambda/go-kzg/bls"
+	"github.com/aulichney/go-kzg/bls"
 )
 
 func TestFFTSettings_reduceLeaves(t *testing.T) {

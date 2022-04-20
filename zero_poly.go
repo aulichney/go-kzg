@@ -9,7 +9,7 @@ package kzg
 
 import (
 	"fmt"
-	"github.com/protolambda/go-kzg/bls"
+	"github.com/aulichney/go-kzg/bls"
 )
 
 type ZeroPolyFn func(missingIndices []uint64, length uint64) ([]bls.Fr, []bls.Fr)
