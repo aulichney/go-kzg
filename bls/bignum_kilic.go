@@ -112,6 +112,11 @@ func InvModFr(dst *Fr, v *Fr) {
 	(*kbls.Fr)(dst).RedInverse((*kbls.Fr)(v))
 }
 
+func NegModFr(dst *Fr, v *Fr) {
+	(*kbls.Fr)(dst).Neg((*kbls.Fr)(v))
+	//kbls.RedNeg((*kbls.Fr)(dst), (*kbls.Fr)(v))
+}
+
 //func SqrModFr(dst *Fr, v *Fr) {
 //	kbls.FrSqr((*kbls.Fr)(dst), (*kbls.Fr)(v))
 //}
