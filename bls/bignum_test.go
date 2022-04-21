@@ -80,6 +80,10 @@ func TestDivModFr(t *testing.T) {
 
 	var invB Fr
 	InvModFr(&invB, &bVal)
+
+	var negB Fr
+	NegModFr(&negB, &bVal)
+
 	var mulInv Fr
 	MulModFr(&mulInv, &aVal, &invB)
 
