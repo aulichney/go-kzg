@@ -124,4 +124,29 @@ func NegModFr(dst *Fr, v *Fr) {
 func EvalPolyAt(dst *Fr, p []Fr, x *Fr) {
 	// TODO: kilic BLS has no optimized evaluation function
 	EvalPolyAtUnoptimized(dst, p, x)
+
 }
+
+func IntAsFr(dst *Fr, i uint64) {
+	var data [8]byte
+	binary.BigEndian.PutUint64(data[:], i)
+	(*kbls.Fr)(dst).RedFromBytes(data[:])
+}
+
+//func IntAsFr(dst *Fr, i int64) {
+//	//z := new(Fr)
+//	//z.SetInt64(uint64(i))
+//
+//	//(*kbls.Fr)(dst).setUint64(uint64(i))
+//	(*kbls.Fr)(dst).SetUInt64(i)
+//
+//	dst = new(Fr).setUint64(1)
+//}
+
+/*func IntAsFr(dst *Fr, i int64) {
+	(*kbls.Fr)(dst).setUint64(uint64(i))
+}
+
+func IntAsFr(dst *Fr, i int64) {
+	(*gmcl.Fr)(dst).SetInt64(i)
+}*/
