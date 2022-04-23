@@ -133,20 +133,16 @@ func IntAsFr(dst *Fr, i uint64) {
 	(*kbls.Fr)(dst).RedFromBytes(data[:])
 }
 
-//func IntAsFr(dst *Fr, i int64) {
-//	//z := new(Fr)
-//	//z.SetInt64(uint64(i))
-//
-//	//(*kbls.Fr)(dst).setUint64(uint64(i))
-//	(*kbls.Fr)(dst).SetUInt64(i)
-//
-//	dst = new(Fr).setUint64(1)
-//}
+func MulVecFr(a, b []Fr) []Fr {
 
-/*func IntAsFr(dst *Fr, i int64) {
-	(*kbls.Fr)(dst).setUint64(uint64(i))
+	n := len(a)
+	if n == len(b) && n > 0 {
+		result := make([]Fr, n, n)
+		for i := 0; i < n; i++ {
+			MulModFr(&result[i], &a[i], &b[i])
+		}
+		return result
+	}
+	result := make([]Fr, 0)
+	return result
 }
-
-func IntAsFr(dst *Fr, i int64) {
-	(*gmcl.Fr)(dst).SetInt64(i)
-}*/
