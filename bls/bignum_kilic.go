@@ -134,7 +134,6 @@ func IntAsFr(dst *Fr, i uint64) {
 }
 
 func MulVecFr(a, b []Fr) []Fr {
-
 	n := len(a)
 	if n == len(b) && n > 0 {
 		result := make([]Fr, n, n)
